@@ -1,5 +1,6 @@
 import React from 'react'
 // import { v4 as uuidv4 } from 'uuid';
+import { FilterItemContainer } from './FilterItemStyles/FilterItemStyles'
 
 export default function FilterItem({ filter, filters, setFilters, fieldName }) {
 
@@ -52,8 +53,8 @@ export default function FilterItem({ filter, filters, setFilters, fieldName }) {
     }
 
     return (
-        <div >
+        <FilterItemContainer >
             <div key={filter} className={fieldName} onClick={handleRemoveFilter}>{filter}</div>        
-        </div>
+        </FilterItemContainer>
     )
 }
