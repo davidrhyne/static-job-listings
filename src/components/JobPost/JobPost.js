@@ -19,23 +19,22 @@ export default function JobPost({ job, filters, setFilters }) {
             setFilters({ ...filters, "tools": [filter] })
         } else if(filterField === 'tools' && !filters.tools.includes(filter)) {
             setFilters({ ...filters, ...filters.tools.push(filter) })
-        }
-        
+        } 
     }
 
     return (
         <div key={job.id}>
             <div>{job.id}</div>
-            <div>company ={job.company}</div>
-            <div>logo = {job.logo}</div>
-            <div>new = {job.new ? "true" : "false"}</div>
-            <div>featured = {job.feature ? "true" : "false"}</div>
-            <div>position = {job.position}</div>
+            <div>{job.company}</div>
+            <div>{job.logo}</div>
+            <div>{job.new ? "true" : "false"}</div>
+            <div>{job.feature ? "true" : "false"}</div>
+            <div>{job.position}</div>
             <div className="role" onClick={handleClick}>{job.role}</div>
             <div className="level" onClick={handleClick}>{job.level}</div>
-            <div>postedAt = {job.postedAt}</div>
-            <div>contract = {job.contract}</div>
-            <div>location = {job.location}</div>
+            <div>{job.postedAt}</div>
+            <div>{job.contract}</div>
+            <div>{job.location}</div>
             {job.languages.map(language => <div className="languages" onClick={handleClick}>{language}</div>)}
             {job.tools.map(tool => <div className="tools" onClick={handleClick}>{tool}</div>)}
             <br></br>
