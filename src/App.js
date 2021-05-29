@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import './App.css';
 import JobListing from './components/JobListing/JobListing'
 import FilterList from './components/FilterList/FilterList'
+import Header from './components/Header/Header'
 import JobsData from '../src/data/data.json'
 
 function App() {
@@ -31,7 +32,7 @@ function App() {
 
   return ( 
     <div>
-      <div>hello</div>
+      <Header />
       <FilterList filters={filters} setFilters={setFilters}/>
       <JobListing jobs={jobs} filters={filters} setFilters={setFilters}/>
     </div>
