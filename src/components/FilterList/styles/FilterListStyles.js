@@ -8,11 +8,12 @@ export const FilterListContainer = styled.div`
     margin: -2em auto 3em;
 
     /* border: 2px magenta solid; */
-    padding: 1em 2em;
+    padding: 1em 2em 0;
     display: flex;
     border-radius: .5em;
 
     box-sizing: border-box;
+
 
     
 `
@@ -20,11 +21,11 @@ export const FilterListContainer = styled.div`
 export const FilterWrapper = styled.div`
     display: flex;
     flex-wrap: wrap;
-    background: dodgerblue;
+
 `
 
 export const FilterListClear = styled.div`
-    visibility: ${props => Object.keys(props.filters).length === 0 ? "hidden" : "visible"};
+    /* visibility: ${props => Object.keys(props.filters).length === 0 ? "hidden" : "visible"}; */
     
     color: #7C8F8F;
     font-weight: 700;
@@ -36,6 +37,7 @@ export const FilterListClear = styled.div`
     /* margin: auto 0 auto auto; */
     margin-left: auto; 
     margin-right: 0;
+    padding-bottom: 1em;
     /* margin-top: auto;
     margin-bottom: auto;
     background: lightsalmon; */

@@ -1,17 +1,15 @@
 import React from 'react'
-// import { v4 as uuidv4 } from 'uuid';
 import { FilterItemContainer, FilterButton, FilterButtonClose } from './FilterItemStyles/FilterItemStyles'
 
 export default function FilterItem({ filter, filters, setFilters, fieldName }) {
 
-//    console.log(uuidv4())
+    //console.log('filters', filters)
 
-    function handleRemoveFilter(e){
-        const filter = e.target.textContent
-        const filterField =  e.target.className
+    function handleRemoveFilter(filterValue, filterFieldName){
+        const filter = filterValue
+        const filterField =  filterFieldName
         const currentLanguages = filters.languages
         const currentTools = filters.tools
-
 
         if(filterField === 'role') {
 
@@ -28,18 +26,30 @@ export default function FilterItem({ filter, filters, setFilters, fieldName }) {
         } else if (currentLanguages !== undefined && currentLanguages.includes(filter)) {
             setFilters(currentFilters => {
 
-                const updatedLanguages = currentFilters.languages !== undefined ? currentFilters.languages.filter( lang => lang !== filter) : undefined
-
-                return { ...currentFilters, "languages": updatedLanguages} 
+                const updatedLanguages = currentFilters.languages !== undefined ? currentFilters.languages.filter( lang => lang !== filter) : []
+                //console.log('updatedLanguages = ', updatedLanguages)
+                if(updatedLanguages.length === 0) {
+                    delete currentFilters.languages 
+                    return Object.assign({}, currentFilters)
+                } else {
+                    return { ...currentFilters, "languages": updatedLanguages} 
+                }
+                
 
 
             })
         }  else if (currentTools !== undefined && currentTools.includes(filter)) {
             setFilters(currentFilters => {
 
-                const updatedTools = currentFilters.tools !== undefined ? currentFilters.tools.filter( tool => tool !== filter) : undefined
+                const updatedTools = currentFilters.tools !== undefined ? currentFilters.tools.filter( tool => tool !== filter) : []
 
-                return { ...currentFilters, "tools": updatedTools} 
+                
+                if(updatedTools.length === 0) {
+                    delete currentFilters.tools 
+                    return Object.assign({}, currentFilters)
+                } else {
+                    return { ...currentFilters, "tools": updatedTools} 
+                }
 
 
             })
@@ -48,11 +58,10 @@ export default function FilterItem({ filter, filters, setFilters, fieldName }) {
 
     return (
         <FilterItemContainer >
-            <FilterButton key={filter} className={fieldName} onClick={handleRemoveFilter}>                
+            <FilterButton key={filter} onClick={() => handleRemoveFilter(filter, fieldName)}>                
                 {filter}
             </FilterButton> 
-            <FilterButtonClose>X</FilterButtonClose>
-
+            <FilterButtonClose onClick={() => handleRemoveFilter(filter, fieldName)}>X</FilterButtonClose>
         </FilterItemContainer>
 
     )

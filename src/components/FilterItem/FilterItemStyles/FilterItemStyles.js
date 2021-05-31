@@ -22,6 +22,12 @@ export const FilterButton = styled.button`
     cursor: pointer;
     border: none;
     outline: none;
+    &:hover {
+        background: #5CA5A5;
+        color: #EFFAFA;
+        /* //box-shadow: inset 0 0 0 0 #2B3939; */
+        transition: all 500ms;
+    }
 `
 
 export const FilterButtonClose = styled.span`
@@ -42,8 +48,9 @@ export const FilterButtonClose = styled.span`
     margin-right: 1em;
     margin-bottom: 1em;
     box-sizing: border-box;
-    &:last-of-type {
-        background: red;
+    &:hover {
+        background: #2B3939;
+        /* //box-shadow: inset 0 0 0 0 #2B3939; */
+        transition: all 500ms ease-in-out;
     }
-    box-sizing: border-box;
 `

@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { JobPostContainer }  from './styles/JobPostStyles'
 
 export default function JobPost({ job, filters, setFilters }) {
 
@@ -23,7 +23,7 @@ export default function JobPost({ job, filters, setFilters }) {
     }
 
     return (
-        <div key={job.id}>
+        <JobPostContainer key={job.id}>
             <div>{job.id}</div>
             <div>{job.company}</div>
             <div>{job.logo}</div>
@@ -38,6 +38,6 @@ export default function JobPost({ job, filters, setFilters }) {
             {job.languages.map(language => <div className="languages" onClick={handleClick}>{language}</div>)}
             {job.tools.map(tool => <div className="tools" onClick={handleClick}>{tool}</div>)}
             <br></br>
-        </div>
+        </JobPostContainer>
     )
 }
