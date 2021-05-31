@@ -51,8 +51,9 @@ export default function FilterItem({ filter, filters, setFilters, fieldName }) {
             <FilterButton key={filter} className={fieldName} onClick={handleRemoveFilter}>                
                 {filter}
             </FilterButton> 
-            <FilterButtonClose>x</FilterButtonClose>
-                   
+            <FilterButtonClose>X</FilterButtonClose>
+
         </FilterItemContainer>
+
     )
 }

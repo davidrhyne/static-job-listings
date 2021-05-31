@@ -7,6 +7,6 @@ export const HeaderContainer = styled.div`
     background-image: url(${desktopBgImg});
     background-position-x: center;
     background-size: cover;
-    
+
 
 `
