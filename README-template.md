@@ -47,22 +47,20 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ## My process
 
+After reading the style guide and creating the React app, I spent the majority of the time making sure all the functional elements worked before starting any styling.  For this project, at least 80% of the logic is driven by the maintenance of the 'filters' used to select the jobs to display.  After that, I started styling the components which lead to a couple iterations of code revisions to add omissions and fix bugs.  And once I thought the code was working as intended, I spent some time refactoring the code, removing console logs, and adding comments.
+
 ### Built with
 
+- [React](https://reactjs.org/) - JS library
+- [Styled Components](https://styled-components.com/) - For styling React Components
+- Mobile-first workflow
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+This was a 
 
 To see how you can add code snippets, see below:
 
@@ -82,31 +80,22 @@ const proudOfThisFunc = () => {
 
 If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+This was an great excercise in React and styled-components and I will continue to focus on projects like to keep get more experience in both of these... along with flexbox, JavaScript, and CSS.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [MDN](https://developer.mozilla.org/en-US/) - An invaluable resource that I use daily.
+- [css-tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) - This is a greate resource on flexbox!  
+- [React Constants](https://www.joshwcomeau.com/css/css-variables-for-react-devs/) - This article helped to remind me to use a 'constants' file and folder for code like CSS variables.
+- [styled-component documentation](https://styled-components.com/) - This was my first solo adventure with styled-components and their documentation was very helpful.
+- [stack-overflow](https://stackoverflow.com/questions/31000885/align-an-element-to-bottom-with-flexbox) - The recommendation to use 'flex-grow: 1;' was exactly what I needed to position the last flexbox element to the right side of the container.
+- [stack-overflow](https://stackoverflow.com/questions/34582405/react-wont-load-local-images) - The recommendation to "Keep all your images(or any assets like videos, fonts) in the public folder as shown below." solved my problem with loading images dynamically with React.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- Frontend Mentor - [@davidrhyne](https://www.frontendmentor.io/profile/davidrhyne)
+- Twitter - [@DavidRhyne16](https://www.twitter.com/DavidRhyne16)
