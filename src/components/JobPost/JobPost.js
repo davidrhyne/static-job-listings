@@ -1,5 +1,12 @@
 import React from 'react'
-import { JobPostContainer }  from './styles/JobPostStyles'
+import { 
+    JobPostContainer, 
+    JobPostCompanyWrapper, 
+    JobPostImage,  
+    JobPostCompany,
+    JobPostNewPost,
+    JobPostFeatured
+} from './styles/JobPostStyles'
 
 export default function JobPost({ job, filters, setFilters }) {
 
@@ -23,12 +30,13 @@ export default function JobPost({ job, filters, setFilters }) {
     }
 
     return (
-        <JobPostContainer key={job.id}>
-            <div>{job.id}</div>
-            <div>{job.company}</div>
-            <div>{job.logo}</div>
-            <div>{job.new ? "true" : "false"}</div>
-            <div>{job.feature ? "true" : "false"}</div>
+        <JobPostContainer key={job.id} test={'green'}>
+            <JobPostImage imagePath={job.logo} /> 
+            <JobPostCompanyWrapper>
+                <JobPostCompany>{job.company}</JobPostCompany>
+                <JobPostNewPost>{job.new ? "true" : "false"}</JobPostNewPost>
+                <JobPostFeatured>{job.feature ? "true" : "false"}</JobPostFeatured>
+            </JobPostCompanyWrapper>
             <div>{job.position}</div>
             <div className="role" onClick={handleClick}>{job.role}</div>
             <div className="level" onClick={handleClick}>{job.level}</div>
