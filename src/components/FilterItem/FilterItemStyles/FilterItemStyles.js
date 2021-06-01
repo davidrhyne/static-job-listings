@@ -1,21 +1,22 @@
 import styled from 'styled-components'
+import { COLOR_SCHEME } from '../../../constants/constants'
 
 export const FilterItemContainer = styled.div`
 
 
     display: flex;
-    
+
 
 `
 
 export const FilterButton = styled.button`
     font-family: inherit;
     font-weight: 700;
-    background: #EFFAFA;
-    color: #5CA5A5;
+    background: ${COLOR_SCHEME.SECONDARY};
+    color: ${COLOR_SCHEME.PRIMARY};
     padding: 0 10px;
     height: 32px;
-    border-radius: .5em 0 0 .5em;
+    border-radius: .5em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,15 +24,15 @@ export const FilterButton = styled.button`
     border: none;
     outline: none;
     &:hover {
-        background: #5CA5A5;
-        color: #EFFAFA;
-        /* //box-shadow: inset 0 0 0 0 #2B3939; */
-        transition: all 500ms;
+        background: ${COLOR_SCHEME.PRIMARY};
+        color: ${COLOR_SCHEME.SECONDARY};
+        border-radius: .5em 0 0 .5em;
+        transition: all 250ms;
     }
 `
 
 export const FilterButtonClose = styled.span`
-    /* box-sizing: border-box; */
+
     background: #5CA5A5;
     font-weight: 700;
     color: white;

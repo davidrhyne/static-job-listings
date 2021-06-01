@@ -1,11 +1,9 @@
 import styled from 'styled-components'
 
-
-
 export const FilterListContainer = styled.div`
     width: 80%;
     background: white;
-    margin: -2em auto 3em;
+    margin: -2em auto 0;
 
     /* border: 2px magenta solid; */
     padding: 1em 2em 0;
@@ -14,8 +12,6 @@ export const FilterListContainer = styled.div`
 
     box-sizing: border-box;
 
-
-    
 `
 
 export const FilterWrapper = styled.div`

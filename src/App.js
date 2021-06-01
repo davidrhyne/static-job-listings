@@ -4,6 +4,7 @@ import JobListing from './components/JobListing/JobListing'
 import FilterList from './components/FilterList/FilterList'
 import Header from './components/Header/Header'
 import JobsData from '../src/data/data.json'
+//import ReactCSSTransitionGroup from 'react-transition-group'; // ES6
 
 function App() {
 
