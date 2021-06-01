@@ -1,12 +1,11 @@
 import styled from 'styled-components'
-import desktopBgImg from '../../../images/bg-header-desktop.svg'
+// import desktopBgImg from '../../../../public/images/bg-header-desktop.svg'
+import { COLOR_SCHEME } from '../../../constants/constants'
 
 export const HeaderContainer = styled.div`
     height: 156px;
-    background: #5CA5A5;
-    background-image: url(${desktopBgImg});
+    background: ${COLOR_SCHEME.PRIMARY};
+    background-image: url('images/bg-header-desktop.svg');
     background-position-x: center;
     background-size: cover;
-
-
 `

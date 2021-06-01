@@ -4,12 +4,11 @@ import { v4 as uuidv4 } from 'uuid';
 import { FilterListContainer, FilterListClear, FilterWrapper }  from './styles/FilterListStyles'
 
 export default function FilterList({ filters, setFilters }) {
-    // console.log('keys', Object.keys(filters).length)
-    // console.log(filters)
+
     function handleFilterListClear() {
         setFilters({})
     }
-    //console.log(filters)
+
     return (
          Object.keys(filters).length === 0 ? null :
             <FilterListContainer>
@@ -22,11 +21,8 @@ export default function FilterList({ filters, setFilters }) {
                         return <FilterItem key={uuidv4()} filters={filters} filter={filter[1]} setFilters={setFilters} fieldName={fieldName}/>
                     } ) }
                 </FilterWrapper>
-
                 { Object.keys(filters).length === 0 ? null : 
                 <FilterListClear onClick={handleFilterListClear} filters={filters}>Clear</FilterListClear> }
-            </FilterListContainer>
-        
-
+            </FilterListContainer>      
     )
 }

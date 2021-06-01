@@ -6,7 +6,7 @@ import { JobListingContainer } from './styles/JobListingStyles'
 export default function Jobs({ jobs, filters, setFilters }) {
     return (
         <JobListingContainer>
-            {jobs.map(job => <JobPost job={job} filters={filters} setFilters={setFilters} />)}
+            {jobs.map(job => <JobPost key={job.id} job={job} filters={filters} setFilters={setFilters} />)}
         </JobListingContainer>
     )
 }

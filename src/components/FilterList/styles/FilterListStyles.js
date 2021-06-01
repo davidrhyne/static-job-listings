@@ -1,47 +1,44 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
+import { COLOR_SCHEME, BOX_SHADOW } from '../../../constants/constants'
+
+const fadeIn = keyframes`
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+`
 
 export const FilterListContainer = styled.div`
     width: 80%;
-    background: white;
-    margin: -2em auto 0;
-
-    /* border: 2px magenta solid; */
+    background: ${COLOR_SCHEME.WHITE};
+    margin: -2em auto 1.5em;
     padding: 1em 2em 0;
     display: flex;
     border-radius: .5em;
-
     box-sizing: border-box;
-
+    box-shadow: ${BOX_SHADOW.PRIMARY_COLOR};
+    animation: ${fadeIn} 250ms;    
 `
 
 export const FilterWrapper = styled.div`
     display: flex;
     flex-wrap: wrap;
-
 `
 
 export const FilterListClear = styled.div`
-    /* visibility: ${props => Object.keys(props.filters).length === 0 ? "hidden" : "visible"}; */
-    
-    color: #7C8F8F;
+    color: ${COLOR_SCHEME.SECONDARY_DARKER};
+    font-size: .8125rem;
     font-weight: 700;
     display: flex;
     justify-content: center;
-    left: 0;
     align-items: center;
-    padding-top: 2px;
-    /* margin: auto 0 auto auto; */
-    margin-left: auto; 
-    margin-right: 0;
-    padding-bottom: 1em;
-    /* margin-top: auto;
-    margin-bottom: auto;
-    background: lightsalmon; */
-    /* justify-items: center; */
-
+    left: 0;
+    padding: 2px 0 1em;
+    margin: 0 0 0 auto;
     &:hover {
         text-decoration: underline;
-        color: #5CA5A5;
+        color: ${COLOR_SCHEME.PRIMARY};
     }
-
 `

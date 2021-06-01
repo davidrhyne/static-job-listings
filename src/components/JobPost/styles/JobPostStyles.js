@@ -1,17 +1,19 @@
 import styled from 'styled-components'
-import { COLOR_SCHEME, MEDIA_QUERY } from '../../../constants/constants'
+import { COLOR_SCHEME, MEDIA_QUERY, BOX_SHADOW } from '../../../constants/constants'
 
 export const JobPostContainer = styled.div`
     font-size: .8125rem;
-    margin-bottom: 0 auto;
-    padding: 1em 1.5em;
     background: ${COLOR_SCHEME.WHITE};
-    display: flex;
-    flex-direction: column;
-    max-width: 1110px;
+    
     margin: 0 auto 3em;
+    padding: 1em 1.5em;
+    max-width: 1110px;
+    display: flex;
+    flex-direction: column;       
     border-radius: .5em;
     border-left: ${props => props.featured ? `.4em solid ${COLOR_SCHEME.PRIMARY}`  : 'none'};
+    
+    box-shadow: ${BOX_SHADOW.PRIMARY_COLOR};
     @media (min-width: ${MEDIA_QUERY.MIN_WIDTH}) {
         flex-direction: row;
         padding: 2em;
@@ -20,9 +22,9 @@ export const JobPostContainer = styled.div`
 export const JobPostImage = styled.img.attrs(props => ({
     src: props.imagePath,
   }))`
-    width: 48px;
-    margin: -2.8em 0 .5em .5em;
+    width: 48px;    
     height: auto;
+    margin: -2.8em 0 .5em .5em;
 
     @media (min-width: ${MEDIA_QUERY.MIN_WIDTH}) {
         width: 88px;
@@ -31,7 +33,6 @@ export const JobPostImage = styled.img.attrs(props => ({
         padding: .5em .5em 0;
         margin: auto 1em auto 0;
     }
-
 `
 
 export const JobPostCenterWrapper = styled.div`
@@ -51,8 +52,7 @@ export const JobPostCompany = styled.div`
     color: ${COLOR_SCHEME.PRIMARY};
     font-weight: 700;
     margin-right: 1em;
-    padding-top: 6px;
-    
+    padding-top: 6px;    
 `
 export const JobPostNewPost = styled.div`
     font-size: .6875rem;
@@ -84,7 +84,10 @@ export const JobPostPosition = styled.div`
 export const JobPostDetails = styled.div`
     display: flex;
     margin-bottom: 1.5em;
-
+    @media (min-width: ${MEDIA_QUERY.MIN_WIDTH}) {
+        width: 95%;
+        justify-content: space-between;
+    }
 `
 export const JobPostDetail = styled.div`
     color: ${COLOR_SCHEME.SECONDARY_DARKER};

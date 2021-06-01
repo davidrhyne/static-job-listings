@@ -5,10 +5,7 @@ body {
   font-size: .9375rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
   background: 	#EFFAFA;
-  /* background-image: url('../public/images/bg-header-desktop.svg'); */
-
 }
 
 code {

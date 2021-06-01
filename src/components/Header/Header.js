@@ -3,8 +3,6 @@ import { HeaderContainer } from './HeaderStyles/HeaderStyles'
 
 export default function Header() {
     return (
-        <HeaderContainer>
-
-        </HeaderContainer>
+        <HeaderContainer />
     )
 }
