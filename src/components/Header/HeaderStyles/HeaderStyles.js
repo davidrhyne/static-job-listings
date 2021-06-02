@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-// import desktopBgImg from '../../../../public/images/bg-header-desktop.svg'
 import { COLOR_SCHEME } from '../../../constants/constants'
 
 export const HeaderContainer = styled.div`
