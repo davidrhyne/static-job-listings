@@ -1,70 +1,69 @@
-# Getting Started with Create React App
+# Frontend Mentor - Job listings with filtering solution
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a solution to the [Job listings with filtering challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/job-listings-with-filtering-ivstIPCt). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-## Available Scripts
+## Table of contents
 
-In the project directory, you can run:
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
 
-### `yarn start`
+### The challenge
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Users should be able to:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- View the optimal layout for the site depending on their device's screen size
+- See hover states for all interactive elements on the page
+- Filter job listings based on the categories
 
-### `yarn test`
+### Screenshot
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![desktop](https://user-images.githubusercontent.com/63062052/120488424-60a94880-c37c-11eb-94de-518879415abe.png)
+![mobile](https://user-images.githubusercontent.com/63062052/120488263-3bb4d580-c37c-11eb-8702-999db3db848c.png)
 
-### `yarn build`
+### Links
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Solution URL: [@github](https://github.com/davidrhyne/static-job-listings)
+- Live Site URL: [@github pages](https://your-live-site-url.com)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## My process
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+After reading the style guide and creating the React app, I spent the majority of the time making sure all the functional elements worked before starting any styling.  For this project, at least 80% of the logic is driven by the maintenance of the 'filters' used to select the jobs to display.  After that, I started styling the components which lead to a couple iterations of code revisions to add omissions and fix bugs.  And once I thought the code was working as intended, I spent some time refactoring the code, removing console logs, and adding comments.
 
-### `yarn eject`
+### Built with
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- [React](https://reactjs.org/) - JS library
+- [Styled Components](https://styled-components.com/) - For styling React Components
+- Mobile-first workflow
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### What I learned
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+This was my first solo React with styled-components and I learned an incredible amount about both of those packages.  From React, it was great to code an application that used hooks and functional components.  And from styled components, the exercise of converting html tags to named components was fun and challenging.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Continued development
 
-## Learn More
+This was a great exercise in React and styled-components and I will continue to focus on projects like to keep get more experience in both of these... along with flexbox, JavaScript, and CSS.  In particular, I will focus on techniques like ...restProps and children to limit the number of props passed between components.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Useful resources
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- [MDN](https://developer.mozilla.org/en-US/) - An invaluable resource that I use daily.
+- [css-tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) - This is a great resource on flexbox!  
+- [React Constants](https://www.joshwcomeau.com/css/css-variables-for-react-devs/) - This article helped to remind me to use a 'constants' file and folder for code like CSS variables.
+- [styled-component documentation](https://styled-components.com/) - This was my first solo adventure with styled-components and their documentation was very helpful.
+- [stack-overflow](https://stackoverflow.com/questions/31000885/align-an-element-to-bottom-with-flexbox) - The recommendation to use 'flex-grow: 1;' was exactly what I needed to position the last flexbox element to the right side of the container.
+- [stack-overflow](https://stackoverflow.com/questions/34582405/react-wont-load-local-images) - The recommendation to "Keep all your images(or any assets like videos, fonts) in the public folder as shown below." solved my problem with loading images dynamically with React.
 
-### Code Splitting
+## Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Frontend Mentor - [@davidrhyne](https://www.frontendmentor.io/profile/davidrhyne)
+- Twitter - [@DavidRhyne16](https://www.twitter.com/DavidRhyne16)
