@@ -27,12 +27,10 @@ export default function FilterItem({ filter, filters, setFilters, fieldName }) {
                 // there can be 0 to many languages, so remove the one that was selected with filter method
                 // return empty array if there are no languages so that updatedLanguages.length check will not error out
                 const updatedLanguages = currentFilters.languages !== undefined ? currentFilters.languages.filter( lang => lang !== filter) : []
-                
-                // 
+    
                 if(updatedLanguages.length === 0) {
                     delete currentFilters.languages 
                     return { ...currentFilters }
-                    //return Object.assign({}, currentFilters)
                 } else {
                     return { ...currentFilters, "languages": updatedLanguages} 
                 }
@@ -43,7 +41,6 @@ export default function FilterItem({ filter, filters, setFilters, fieldName }) {
                 if(updatedTools.length === 0) {
                     delete currentFilters.tools 
                     return { ...currentFilters }
-                    //return Object.assign({}, currentFilters)
                 } else {
                     return { ...currentFilters, "tools": updatedTools} 
                 }

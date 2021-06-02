@@ -1,6 +1,7 @@
 import styled, { keyframes } from 'styled-components'
 import { COLOR_SCHEME, BOX_SHADOW } from '../../../constants/constants'
 
+// for animating the loading of the filter list container
 const fadeIn = keyframes`
     from {
         opacity: 0;
