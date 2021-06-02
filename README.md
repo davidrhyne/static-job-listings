@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [@github](https://github.com/davidrhyne/static-job-listings)
-- Live Site URL: [@github pages](https://your-live-site-url.com)
+- Live Site URL: [@github pages](https://davidrhyne.github.io/static-job-listings)
 
 ## My process
 
