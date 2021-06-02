@@ -14,11 +14,6 @@ This is a solution to the [Job listings with filtering challenge on Frontend Men
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
-## Overview
 
 ### The challenge
 
@@ -30,20 +25,13 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![desktop](https://user-images.githubusercontent.com/63062052/120488424-60a94880-c37c-11eb-94de-518879415abe.png)
+![mobile](https://user-images.githubusercontent.com/63062052/120488263-3bb4d580-c37c-11eb-8702-999db3db848c.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [@github](https://github.com/davidrhyne/static-job-listings)
+- Live Site URL: [@github pages](https://your-live-site-url.com)
 
 ## My process
 
@@ -60,36 +48,16 @@ After reading the style guide and creating the React app, I spent the majority o
 
 ### What I learned
 
-This was a 
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-
+This was my first solo React with styled-components and I learned an incredible amount about both of those packages.  From React, it was great to code an application that used hooks and functional components.  And from styled components, the exercise of converting html tags to named components was fun and challenging.
 
 ### Continued development
 
-This was an great excercise in React and styled-components and I will continue to focus on projects like to keep get more experience in both of these... along with flexbox, JavaScript, and CSS.
+This was a great exercise in React and styled-components and I will continue to focus on projects like to keep get more experience in both of these... along with flexbox, JavaScript, and CSS.  In particular, I will focus on techniques like ...restProps and children to limit the number of props passed between components.
 
 ### Useful resources
 
 - [MDN](https://developer.mozilla.org/en-US/) - An invaluable resource that I use daily.
-- [css-tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) - This is a greate resource on flexbox!  
+- [css-tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) - This is a great resource on flexbox!  
 - [React Constants](https://www.joshwcomeau.com/css/css-variables-for-react-devs/) - This article helped to remind me to use a 'constants' file and folder for code like CSS variables.
 - [styled-component documentation](https://styled-components.com/) - This was my first solo adventure with styled-components and their documentation was very helpful.
 - [stack-overflow](https://stackoverflow.com/questions/31000885/align-an-element-to-bottom-with-flexbox) - The recommendation to use 'flex-grow: 1;' was exactly what I needed to position the last flexbox element to the right side of the container.
