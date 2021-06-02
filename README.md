@@ -52,7 +52,7 @@ This was my first solo React with styled-components and I learned an incredible 
 
 ### Continued development
 
-This was a great exercise in React and styled-components and I will continue to focus on projects like to keep get more experience in both of these... along with flexbox, JavaScript, and CSS.  In particular, I will focus on techniques like ...restProps and children to limit the number of props passed between components.
+This was a great exercise in React and styled-components and I will continue to focus on projects like this to keep get more experience in both of these... along with flexbox, JavaScript, and CSS.  In particular, I will focus on techniques like ...restProps and children to limit the number of props passed between components.
 
 ### Useful resources
 
