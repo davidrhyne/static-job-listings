@@ -20,7 +20,7 @@ export const JobPostContainer = styled.div`
     }
 `
 export const JobPostImage = styled.img.attrs(props => ({
-    src: props.imagePath,
+    src: props.imagePath, alt: props.alt
   }))`
     width: 48px;    
     height: auto;

@@ -40,7 +40,7 @@ export default function JobPost({ job, filters, setFilters }) {
 
     return (
         <JobPostContainer  featured={job.featured}>
-            <JobPostImage imagePath={job.logo} /> 
+            <JobPostImage imagePath={job.logo} alt={job.company}/> 
             <JobPostCenterWrapper>
                 <JobPostCompanyWrapper>
                     <JobPostCompany>{job.company}</JobPostCompany>
